@@ -5,9 +5,9 @@
   "type": "module",
   "description": "Offline-first Progressive Web App for small retail inventory, sales, profit analytics, and employee-safe stock sharing.",
   "scripts": {
-    "dev": "vite --host 0.0.0.0",
-    "build": "tsc --noEmit && vite build",
-    "preview": "vite preview --host 0.0.0.0",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
     "lint": "tsc --noEmit"
   },
   "dependencies": {
