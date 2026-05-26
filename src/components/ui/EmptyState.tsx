@@ -1,0 +1,13 @@
+import type { ReactNode } from "react";
+
+export function EmptyState({ title, description, action }: { title: string; description: string; action?: ReactNode }) {
+  return (
+    <div className="grid min-h-56 place-items-center rounded-lg border border-dashed border-slate-300 bg-white/70 p-8 text-center dark:border-slate-700 dark:bg-slate-900/70">
+      <div>
+        <h3 className="text-base font-bold text-slate-950 dark:text-white">{title}</h3>
+        <p className="mx-auto mt-2 max-w-md text-sm text-slate-500 dark:text-slate-400">{description}</p>
+        {action ? <div className="mt-5">{action}</div> : null}
+      </div>
+    </div>
+  );
+}
